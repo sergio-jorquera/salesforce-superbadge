@@ -1,0 +1,17 @@
+<template>
+  <lightning-layout>
+      <lightning-layout-item class="slds-align-middle">
+          <lightning-combobox 
+              label="Tipo de Barco"
+              value={selectedBoatTypeId}
+              options={searchOptions}
+              onchange={handleSearchOptionChange}
+              class="slds-align-middle" >
+          </lightning-combobox>
+      </lightning-layout-item>
+  </lightning-layout>
+
+  <template if:true={error}>
+      <p style="color: red;">{error}</p>
+  </template>
+</template>
