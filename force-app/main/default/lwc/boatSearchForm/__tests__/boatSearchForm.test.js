@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from '@lwc/engine-dom';
 import BoatSearchForm from 'c/boatSearchForm';
 
 describe('c-boat-search-form', () => {

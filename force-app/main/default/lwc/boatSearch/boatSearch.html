@@ -14,8 +14,9 @@
         </div>
 
         <!-- Aquí va el formulario de búsqueda de barcos -->
-        <p class="slds-var-p-horizontal_small">
-          <c-boat-search-form onsearchboats={searchBoats}></c-boat-search-form>  
+        <p class="slds-var-p-horizontal_small slds-align_absolute-center">
+          <!-- boatSearchForm component goes here -->
+          <c-boat-search-form onsearch={searchBoats}></c-boat-search-form>
         </p>
       </lightning-card>
     </lightning-layout-item>
@@ -33,7 +34,10 @@
       <!-- boatSearchResults component goes here -->
       <!-- onloading={handleLoading} 
             ondoneloading={handleDoneLoading} -->
-      
+            <c-boat-search-results
+            onloading={handleLoading}
+            ondoneloading={handleDoneLoading}
+          ></c-boat-search-results>
     </lightning-layout-item>
   </lightning-layout>
 </template>
